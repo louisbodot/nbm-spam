@@ -114,7 +114,7 @@ class TabularPredictionModule(pl.LightningModule):
     def _init_metrics(self):
         for key in ["train", "val", "test"]:
             if self._binary_classification:
-                setattr(self, f"{key}_m1", torchmetrics.AUROC(task='classification')))
+                setattr(self, f"{key}_m1", torchmetrics.AUROC(task='classification'))
                 setattr(self, f"{key}_m2", torchmetrics.AveragePrecision(pos_label=1))
             elif self._regression:
                 setattr(self, f"{key}_m1", torchmetrics.MeanSquaredError(squared=False))
