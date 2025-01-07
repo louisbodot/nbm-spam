@@ -1,7 +1,7 @@
 fvcore==0.1.5.post20220305
 hydra-core==1.1.2
 numpy
-pytorch-lightning==1.6
+pytorch-lightning==1.9
 scikit-learn>=1.0.2
 torch
 torchvision
